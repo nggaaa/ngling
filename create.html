@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create - NGGANGL</title>
+    <link rel="stylesheet" href="https://nggaaa.github.io/resource/ngl.css" />
+    <link rel="icon" type="image/png" sizes="180x180" href="/faviconme.png" />
+  </head>
+  <body class="bg-violet-100 transition duration-300">
+    <div id="myModal"></div>
+    <div class="container">
+      <div
+        class="flex flex-wrap min-h-screen items-center justify-center py-24"
+      >
+        <div class="w-full md:w-3/4 lg:w-1/2 h-1/2 p-6 bg-white rounded-lg">
+          <div class="p-6">
+            <!-- file id foto kamu -->
+            <img
+              src="/faviconme.png"
+              class="rounded-full mx-auto"
+              style="width: 8rem"
+              alt=""
+            />
+          </div>
+          <h1 class="text-center font-extrabold text-3xl">Buat kode NGGANGL</h1>
+          <!-- ganti dengan username instagram kamu kamu -->
+          <!-- <h2 class="text-center font-bold text-xl">@ng.gaaa</h2> -->
+          <form class="py-6" action="result.html" id="create-form">
+            <div class="mb-4">
+              <label class="font-medium text-base text-black block mb-3">
+                Instagram
+              </label>
+              <input
+                name="instagram"
+                type="text"
+                placeholder="instagram"
+                required
+                class="w-full border-[1.5px] border-form-stroke rounded-lg py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition disabled:bg-[#F5F7FD] disabled:cursor-default"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="font-medium text-base text-black block">
+                Foto (Google Drive)
+              </label>
+              <p class="mb-3 text-sm">
+                Ubah general access yang asalnya dari restricted menjadi anyone
+                with this link
+              </p>
+              <input
+                name="drive"
+                type="url"
+                placeholder="https://drive.google.com/file/d/xxxxxxxxxxxxxxxxxx/view?usp=share_link"
+                required
+                class="w-full border-[1.5px] border-form-stroke rounded-lg py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition disabled:bg-[#F5F7FD] disabled:cursor-default"
+              />
+            </div>
+            <div class="mb-10">
+              <label class="font-medium text-base text-black block mb-3">
+                Apps Script
+              </label>
+              <input
+                name="appscript"
+                type="url"
+                placeholder="https://script.google.com/macros/s/xxxxxxxxxxxxxxxxxxxxxxxxxxxx/exec"
+                required=""
+                class="w-full border-[1.5px] border-form-stroke rounded-lg py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition disabled:bg-[#F5F7FD] disabled:cursor-default"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="py-4 px-10 block lg:px-8 xl:px-10 w-full items-center justify-center text-center text-white text-base bg-violet-700 hover:bg-opacity-90 font-normal rounded-md"
+            >
+              Generate
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

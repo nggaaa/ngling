@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result - NGGANGL</title>
+    <link rel="stylesheet" href="https://nggaaa.github.io/resource/ngl.css" />
+    <link rel="icon" type="image/png" sizes="180x180" href="/faviconme.png" />
+    <script>
+      function getFileId(url) {
+        let fileId = "";
+        let startIndex = url.indexOf("d/") + 2;
+        let endIndex = url.indexOf("/view");
+        fileId = url.substring(startIndex, endIndex);
+        return fileId;
+      }
+      let params = new URLSearchParams(new URL(location.href).search);
+      var output = `
+      <code>&lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8" /&gt;
+          &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+          &lt;title&gt;send anonymous message&lt;/title&gt;
+          &lt;link rel="stylesheet" href="https://nggaaa.github.io/resource/ngl.css" /&gt;
+        &lt;/head&gt;
+        &lt;body class="bg-violet-100 transition duration-300"&gt;
+          &lt;div id="myModal"&gt;&lt;/div&gt;
+          &lt;div class="container"&gt;
+            &lt;div
+              class="flex flex-wrap min-h-screen items-center justify-center py-24"
+            &gt;
+              &lt;div class="w-full md:w-3/4 lg:w-1/2 h-1/2 p-6 bg-white rounded-lg"&gt;
+                &lt;div class="p-6"&gt;
+                  &lt;img
+                    src="https://drive.google.com/uc?id=${getFileId(
+                      params.get("drive")
+                    )}"
+                    class="rounded-full mx-auto"
+                    style="width: 8rem"
+                    alt=""
+                  /&gt;
+                &lt;/div&gt;
+                &lt;h1 class="text-center font-extrabold text-3xl"&gt;
+                  Kirim pesan anomim
+                &lt;/h1&gt;
+                &lt;h2 class="text-center font-bold text-xl"&gt;@${params.get(
+                  "instagram"
+                )}&lt;/h2&gt;
+                &lt;form
+                  id="my-form"
+                  action="${params.get("appscript")}"
+                  class="py-6"
+                &gt;
+                  &lt;div class="mb-6"&gt;
+                    &lt;label for="" class="font-medium text-base text-black block mb-3"&gt;
+                      Pesan
+                    &lt;/label&gt;
+                    &lt;textarea
+                      name="pesan"
+                      required
+                      rows="5"
+                      placeholder="Ketikkan pesanmu disini..."
+                      class="w-full border-[1.5px] border-form-stroke rounded-lg py-3 px-5 font-medium text-body-color placeholder-body-color outline-none focus:border-primary active:border-primary transition disabled:bg-[#F5F7FD] disabled:cursor-default"
+                    &gt;&lt;/textarea&gt;
+                  &lt;/div&gt;
+                  &lt;button
+                    type="submit"
+                    id="btn-submit"
+                    class="py-4 px-10 block lg:px-8 xl:px-10 w-full items-center justify-center text-center text-white text-base bg-violet-700 hover:bg-opacity-90 font-normal rounded-md"
+                  &gt;
+                    Kirim
+                  &lt;/button&gt;
+                &lt;/form&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;script&gt;
+            window.addEventListener("load", function () {
+              const form = document.getElementById("my-form");
+              form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                  method: "POST",
+                  body: data,
+                }).then(() =&gt; {
+                  document.getElementById("myModal").innerHTML = "&lt;div class='bg-black bg-opacity-90 z-[10] fixed top-0 left-0 w-full min-h-screen h-full flex items-center justify-center px-4 py-5'&gt;&lt;div class='w-full max-w-[570px] rounded-[20px] bg-white py-12 px-8 md:py-[60px] md:px-[70px] text-center'&gt;&lt;h3 class='font-bold text-dark text-xl sm:text-2xl pb-2'&gt;Pesanmu Terkirim&lt;/h3&gt;&lt;span class='inline-block bg-violet-700 h-1 w-[90px] mx-auto rounded mb-6'&gt;&lt;/span&gt;&lt;p class='text-base text-body-color leading-relaxed mb-10'&gt;Ditunggu yaa :)&lt;/p&gt;&lt;div class='flex flex-wrap justify-center -mx-3'&gt;&lt;div class='w-1/2 px-3'&gt;&lt;a href='/' class='block text-center w-full p-3 text-base font-medium rounded-lg bg-violet-700 text-white border border-primary hover:bg-opacity-90 transition'&gt;Oke&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;";
+            });
+        });
+    });
+          &lt;/script&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+      </code>`;
+      window.addEventListener("load", function () {
+        document.getElementById("showscript").innerHTML = output;
+      });
+    </script>
+    <link rel="stylesheet" href="/prism.css" />
+    <script src="/prism.js"></script>
+  </head>
+  <body class="bg-violet-100 transition duration-300">
+    <div id="myModal"></div>
+    <div class="container">
+      <div
+        class="flex flex-wrap min-h-screen items-center justify-center py-24"
+      >
+        <div class="w-full md:w-3/4 lg:w-1/2 h-1/2 p-6 bg-white rounded-lg">
+          <div class="p-6">
+            <!-- file id foto kamu -->
+            <img
+              src="/android-chrome-512x512.png"
+              class="rounded-full mx-auto"
+              style="width: 8rem"
+              alt=""
+            />
+          </div>
+          <h1 class="text-center font-extrabold text-xl">
+            Copy Kode Di Bawah. Buat file baru bernama
+            <code class="bg-pink-100">index.html</code>.<br />Lalu paste
+          </h1>
+          <div class="py-6">
+            <div class="mb-10">
+              <pre
+                class="language-html mb-6"
+                id="showscript"
+                style="height: 20rem"
+              ></pre>
+            </div>
+            <p></p>
+            <a
+              href="/create.html"
+              class="py-4 px-10 block lg:px-8 xl:px-10 w-full items-center justify-center text-center text-white text-base bg-pink-500 hover:bg-opacity-90 font-normal rounded-md"
+            >
+              Buat Lagi
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
