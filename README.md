@@ -85,13 +85,11 @@ Berikut caranya membuat ngl sendiri
 
     Klik `Go to xxxxxx (unsafe)`
 
-
-
-14. Setelah itu, klok tombol `Deploy` di navbar. Akan muncul form. Pilih App Type `Web App`. Lalu klik `Deploy di form`.
-15. Copy untuk Web URL nya dengan klik tombol `Copy`. Simpan dulu. Karena itu nanti dibutuhkan.
-16. Buat halamannya dengan masuk ke [sini](http://nggaaa.github.io/create.html)
-17. Isi formnya. Lalu klik Generate.
-18. Setelah loading, kode telah dibuatkan. Copy lalu buka notepad lalu paste. Save dengan nama index.html.
+13. Setelah itu, klok tombol `Deploy` di navbar. Akan muncul form. Pilih App Type `Web App`. Lalu klik `Deploy di form`.
+14. Copy untuk Web URL nya dengan klik tombol `Copy`. Simpan dulu. Karena itu nanti dibutuhkan.
+15. Buat halamannya dengan masuk ke <a target="_blank" rel="noopener noreferrer" href="http://nggaaa.github.io/create.html">sini</a>
+16. Isi formnya. Lalu klik Generate.
+17. Setelah loading, kode telah dibuatkan. Copy lalu buka notepad lalu paste. Save dengan nama index.html.
 
 ## Links
 
