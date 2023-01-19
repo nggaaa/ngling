@@ -67,21 +67,21 @@ Berikut caranya membuat ngl sendiri
 
 10. Klik tombol `Save`.
 
-    ![FORM TRIGGER NGGANGL](md-res/savebtn-trigger.png)
+    ![save TRIGGER NGGANGL](md-res/savebtn-trigger.png)
 
 11. Jika muncul seperti di bawah ini
 
-    ![FORM TRIGGER NGGANGL](md-res/choose%20account.png)
+    ![choose account](md-res/choose%20account.png)
 
     Pilih akun yang sama dengan akun di spreadsheet dan App Script
 
 12. Lalu akan muncul seperti ini
 
-    ![FORM TRIGGER NGGANGL](md-res/security%20google%20alert.png)
+    ![alert security google](md-res/security%20google%20alert.png)
 
     Klik `Advanced`. Lalu muncul seperti di bawah ini
 
-    ![FORM TRIGGER NGGANGL](md-res/goto%20xxxxxxx%20app.png)
+    ![goto xxx app (unsafe)](md-res/goto%20xxxxxxx%20app.png)
 
     Klik `Go to xxxxxx (unsafe)`
 
@@ -89,7 +89,20 @@ Berikut caranya membuat ngl sendiri
 14. Copy untuk Web URL nya dengan klik tombol `Copy`. Simpan dulu. Karena itu nanti dibutuhkan.
 15. Buat halamannya dengan masuk ke <a target="_blank" rel="noopener noreferrer" href="http://nggaaa.github.io/create.html">sini</a>
 16. Isi formnya. Lalu klik Generate.
-17. Setelah loading, kode telah dibuatkan. Copy lalu buka notepad lalu paste. Save dengan nama index.html.
+
+    ![FORM generate html code](md-res/formgeneratecode.png)
+
+17. Setelah loading, kode akan dibuatkan.
+
+    Copy lalu buka notepad lalu paste.
+
+    ![paste code](md-res/paste.png)
+
+    Save dengan nama index.html.
+
+    ![save file](md-res/save%20file.png)
+
+    ![save to index.html](md-res/save-name-indexhtml.png)
 
 ## Links
 
