@@ -47,7 +47,7 @@ function doPost(e) {
 8. Tambahkan trigger dengan klik tombol `+`
 9. Maka muncul form. Isi seperti di bawah ini.
 
-   ![FORM TRIGGER NGGANGL]("./formtriggernggangl.png")
+   ![FORM TRIGGER NGGANGL]("https://github.com/nggaaa/nggaaa.github.io/raw/master/formtriggernggangl.png")
 
 10. Klik tombol `Save`. Trigger akan dibuat.
 11. Setelah itu, klok tombol `Deploy` di navbar. Akan muncul form. Pilih App Type `Web App`. Lalu klik `Deploy di form`.
